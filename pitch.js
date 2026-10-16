@@ -1,25 +1,65 @@
 const scenes = [
-  { label: "INIT / ENGINEERING NOTES", title: "$ whoami", body: "A short introduction to the work behind the profile.", detail: "loading systems / developer tools / open-source work" },
-  { label: 'HELLO, I’M SAI', title: 'I build behind\nthe interface.', body: 'Senior Software Engineer focused on backend systems and developer tools.', detail: 'C++ / Go / Python' },
-  { label: '01 / DISTRIBUTED FILESYSTEM', title: 'Local operations.\nRemote storage.', body: 'A C++ prototype connects Linux file operations to a remote server using FUSE and gRPC.', detail: 'Linux tools → FUSE client → gRPC → C++ server\nPrototype · caching and replication are future work' },
-  { label: '02 / CPU SCHEDULING', title: 'A policy becomes\na running system.', body: 'A C++ simulator explores how scheduling algorithms change the order in which processes run.', detail: 'FCFS / Shortest remaining time / Round robin / Priority' },
-  { label: '03 / DEVELOPER TOOLS', title: 'A workspace across\nrepository boundaries.', body: 'A proposed Go layer for px0 combines repository-specific servers with a shared workspace hub.', detail: 'Design proposal · compilation and testing not yet verified' },
-  { label: '04 / OPEN SOURCE', title: 'Reading code.\nProposing fixes.', body: 'Public pull requests to RocksDB and the Azure Developer CLI make my approach open to inspection.', detail: 'RocksDB #15410 / Azure Developer CLI #10516\nSubmitted contributions · current review status on GitHub' },
-  { label: '05 / WHAT’S NEXT', title: 'Storage. Infrastructure.\nDeveloper experience.', body: 'I’m interested in teams working on the systems and tools that other engineers depend on.', detail: 'Focus: backend and systems engineering' },
-  { label: 'LET’S CONNECT', title: 'Your next systems\nproblem. Let’s talk.', body: 'Sai Keerthan Palavarapu', detail: 'saikeerthanp.su@gmail.com\ngithub.com/saikeerthan-14' }
+  {
+    "label": "INIT / ENGINEERING NOTES",
+    "title": "$ whoami",
+    "body": "Backend & Cloud Infrastructure",
+    "detail": "loading experience / production systems / measurable results"
+  },
+  {
+    "label": "HELLO, I’M SAI",
+    "title": "Backend systems.\nCloud infrastructure.",
+    "body": "Senior Software Engineer with 5+ years across cloud AI, e-commerce, and financial analytics.",
+    "detail": "Bellevue, WA / Go · Java · Python"
+  },
+  {
+    "label": "01 / CLOUD & AI INFRASTRUCTURE",
+    "title": "Connecting agents\nto real systems.",
+    "body": "Remote MCP services, event-driven Go microservices, and telemetry pipelines on Azure.",
+    "detail": "Microsoft · Senior Software Engineer\nFastMCP / AKS / Event Hubs / Functions"
+  },
+  {
+    "label": "02 / E-COMMERCE",
+    "title": "Orchestrating orders.\nReducing latency.",
+    "body": "Go microservices, fault-tolerant Kafka consumers, and Redis caching on Kubernetes.",
+    "detail": "Citymall · Software Development Engineer II\n40% lower P99 API latency at 2K+ peak RPS"
+  },
+  {
+    "label": "03 / FINANCIAL ANALYTICS",
+    "title": "Services for\nportfolio intelligence.",
+    "body": "Spring Boot services, asynchronous processing, and observability for portfolio benchmarks and risk analytics.",
+    "detail": "QuantumStreet AI · Software Engineer\n35% higher compute-heavy service throughput"
+  },
+  {
+    "label": "04 / MEASURABLE RESULTS",
+    "title": "Performance.\nFreshness. Efficiency.",
+    "body": "40% lower catalog P99 latency. Data availability lag from 12 hours to under eight minutes. 60% lower infrastructure costs.",
+    "detail": "Go + Redis / Spark streaming / Airflow ETL"
+  },
+  {
+    "label": "05 / SELECTED PROJECTS",
+    "title": "Distributed storage.\nHybrid retrieval.",
+    "body": "A C++ filesystem prototype with gRPC and FUSE, and a Knowledge Assistant combining vector and keyword retrieval.",
+    "detail": "ChromaDB / BM25 / OpenAI embeddings / Cohere / LangChain"
+  },
+  {
+    "label": "LET’S CONNECT",
+    "title": "Your next backend\nchallenge. Let’s talk.",
+    "body": "Sai Keerthan Palavarapu · Senior Software Engineer",
+    "detail": "kpsai80@gmail.com / Bellevue, WA\ngithub.com/saikeerthan-14"
+  }
 ];
 const illustrations = [
- '<div class="boot-grid"></div>',
- '<div class="orb"></div>',
- '<div class="art-flow"><div class="art-node">Linux tools<small>read · write · unlink</small></div><div class="art-line"></div><div class="art-node">FUSE + gRPC<small>file operation → RPC</small></div><div class="art-line"></div><div class="art-node">C++ server<small>storage · version checks</small></div></div>',
- '<div class="art-scheduler"><div class="lane">P1<i style="width:70%"></i></div><div class="lane">P2<i style="width:42%"></i></div><div class="lane">P3<i style="width:88%"></i></div><div class="lane">P4<i style="width:55%"></i></div><div class="axis">ILLUSTRATIVE PROCESS TIMELINE →</div></div>',
- '<div class="repo-cluster"><div class="repo-hub">workspace hub</div><div class="repo-forks"><div>mobile/</div><div>frontend/</div><div>backend/</div></div></div>',
- '<div class="pr-art"><div>RocksDB<small>↗ PULL REQUEST #15410</small></div><div>Azure CLI<small>↗ PULL REQUEST #10516</small></div></div>',
- '<div class="focus-art"><span>Storage.</span><span>Infrastructure.</span><span>Developer tools.</span></div>',
- '<div class="boot-grid"></div>'
+  "<div class=\"boot-grid\"></div>",
+  "<div class=\"orb\"></div>",
+  "<div class=\"art-flow\"><div class=\"art-node\">MCP services<small>FastMCP · Python</small></div><div class=\"art-line\"></div><div class=\"art-node\">Azure AKS<small>containerized agents</small></div><div class=\"art-line\"></div><div class=\"art-node\">Event pipelines<small>Go · Event Hubs</small></div></div>",
+  "<div class=\"repo-cluster\"><div class=\"repo-hub\">order orchestration</div><div class=\"repo-forks\"><div>Go APIs</div><div>Kafka</div><div>Redis</div></div></div>",
+  "<div class=\"art-flow\"><div class=\"art-node\">Spring Boot<small>portfolio · risk APIs</small></div><div class=\"art-line\"></div><div class=\"art-node\">Redis queues<small>asynchronous processing</small></div><div class=\"art-line\"></div><div class=\"art-node\">Observability<small>sync lag · portfolio drift</small></div></div>",
+  "<div class=\"pr-art impact-art\"><div>40% lower<small>P99 API LATENCY</small></div><div>12h → &lt;8m<small>DATA AVAILABILITY LAG</small></div><div>60% lower<small>INFRASTRUCTURE COSTS</small></div></div>",
+  "<div class=\"focus-art\"><span>C++ · gRPC · FUSE</span><span>Hybrid RAG</span><span>Retrieval + reranking</span></div>",
+  "<div class=\"boot-grid\"></div>"
 ];
 const byId = id => document.getElementById(id);
-const chapters = [...document.querySelectorAll('[data-scene]')];
+const chapters = [...document.querySelectorAll('.chapters [data-scene]')];
 let position = 0, playing = false, previousTime = null, currentScene = -1;
 const duration = 48, chapterDuration = 6;
 function render() {
