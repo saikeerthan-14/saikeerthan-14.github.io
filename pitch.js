@@ -1,6 +1,6 @@
 const scenes = [
   { label: "INIT / ENGINEERING NOTES", title: "$ whoami", body: "A short introduction to the work behind the profile.", detail: "loading systems / developer tools / open-source work" },
-  { label: 'HELLO, I’M SAI', title: 'I build behind\nthe interface.', body: 'Software engineering, with a focus on backend systems and developer tools.', detail: 'C++ / Go / Python' },
+  { label: 'HELLO, I’M SAI', title: 'I build behind\nthe interface.', body: 'Senior Software Engineer focused on backend systems and developer tools.', detail: 'C++ / Go / Python' },
   { label: '01 / DISTRIBUTED FILESYSTEM', title: 'Local operations.\nRemote storage.', body: 'A C++ prototype connects Linux file operations to a remote server using FUSE and gRPC.', detail: 'Linux tools → FUSE client → gRPC → C++ server\nPrototype · caching and replication are future work' },
   { label: '02 / CPU SCHEDULING', title: 'A policy becomes\na running system.', body: 'A C++ simulator explores how scheduling algorithms change the order in which processes run.', detail: 'FCFS / Shortest remaining time / Round robin / Priority' },
   { label: '03 / DEVELOPER TOOLS', title: 'A workspace across\nrepository boundaries.', body: 'A proposed Go layer for px0 combines repository-specific servers with a shared workspace hub.', detail: 'Design proposal · compilation and testing not yet verified' },
